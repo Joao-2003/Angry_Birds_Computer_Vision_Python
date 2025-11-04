@@ -98,9 +98,10 @@ class Physics:
 
     def setup_collision_handlers(self):
         """Setup collision handlers"""
-        self.game.space.add_collision_handler(0, 1).post_solve = self.post_solve_bird_pig
-        self.game.space.add_collision_handler(0, 2).post_solve = self.post_solve_bird_wood
-        self.game.space.add_collision_handler(1, 2).post_solve = self.post_solve_pig_wood
+
+        self.game.space.on_collision(0, 1, post_solve=self.post_solve_bird_pig)
+        self.game.space.on_collision(0, 2, post_solve=self.post_solve_bird_wood)
+        self.game.space.on_collision(1, 2, post_solve=self.post_solve_pig_wood)
 
     def sling_action(self):
         """Set up the sling behavior using computer vision"""
