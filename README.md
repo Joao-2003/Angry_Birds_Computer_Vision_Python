@@ -1,6 +1,6 @@
 # Angry Birds in Python
 
-[YouTube Video](https://www.youtube.com/)
+[YouTube Video]([https://www.youtube.com/](https://youtu.be/l9TEfjfvgp8))
 
 ![Alt text](/resources/images/imagem_2025-01-29_113849074.png?raw=true "angry-birds")
 
